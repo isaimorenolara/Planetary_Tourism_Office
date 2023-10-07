@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+}
+
+.planet {
+    width: 200px;
+    height: 200px;
+    background-image: url('/images/earth.png'); /* Ruta de tu imagen de textura */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateY(0deg); /* Rotación vertical */
+    animation: spin 10s linear infinite;
+}
+
+.content {
+    padding: 300px 0;
+    color: #fff;
+    text-align: center;
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotateY(0deg); /* Rotación vertical inicial */
+    }
+    100% {
+        transform: translate(-50%, -50%) rotateY(360deg); /* Rotación vertical completa */
+    }
+}
+    

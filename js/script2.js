@@ -2,33 +2,42 @@ $(document).ready(function () {
     var id = 0;
 
     $.getJSON('../json/planets.json', function (data) {
-        console.log(data);
+        const planetCarousel = $('#planetCarousel');
+        const indicators = $('.carousel-indicators');
 
-        var carousel = $('#carouselExampleIndicators2');
+        data.forEach(function (planet, index) {
+            const indicator = $('<button>')
+                .attr('type', 'button')
+                .attr('data-bs-target', '#carouselExampleCaptions')
+                .attr('data-bs-slide-to', index)
+                .attr('aria-label', `Slide ${index + 1}`);
 
-        var carouselInner = carousel.find('.carousel-inner');
-
-        for (var i = 0; i < data.length; i++) {
-            var planet = data[i];
-
-            var card = $('<div class="col-md-4 mb-3">');
-            var cardContent = $('<div class="card">');
-            var cardImage = $('<img class="img-fluid" alt="100%x280">').attr('src', planet.image);
-            var cardBody = $('<div class="card-body">');
-            var cardTitle = $('<h4 class="card-title">').text(planet.name);
-            var cardText = $('<p class="card-text">').text(planet.description);
-
-            cardBody.append(cardTitle, cardText);
-            cardContent.append(cardImage, cardBody);
-            card.append(cardContent);
-
-            if (i === 0) {
-                card.addClass('active');
+            if (index === 0) {
+                indicator.addClass('active'); // Marca el primer indicador como activo
             }
-            carouselInner.append(card);
-        }
 
-        carousel.carousel();
+            indicators.append(indicator);
+
+            const carouselItem = $('<div>').addClass('carousel-item');
+            if (index === 0) {
+                carouselItem.addClass('active'); // Marca el primer planeta como activo
+            }
+
+            const planetImage = $('<img>').addClass('rounded mx-auto d-block img-fluid mb-5 hola').attr('src', planet.image).attr('alt', planet.name);
+
+            const planetDescription = $('<div>').addClass('carousel-caption d-none d-md-block filtro');
+            const planetName = $('<h2>').text(planet.name).addClass('titulo');
+            
+            const planetInfo = $('<p>').text(planet.description);
+
+            carouselItem.append(planetImage);
+            planetDescription.append(planetName, planetInfo);
+            carouselItem.append(planetDescription);
+
+            planetCarousel.append(carouselItem);
+        });
+
+        $('#carouselExampleCaptions').carousel();
     });
 
 

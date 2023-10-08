@@ -6,10 +6,10 @@
 }
 
 .titulo {
-    background: linear-gradient(to top, #ff0000 0%, #ffd738 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bolder;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 1);
 }
 
 .universe {

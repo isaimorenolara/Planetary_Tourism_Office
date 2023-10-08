@@ -184,13 +184,13 @@ $(document).ready(function () {
         var endingDate = $('#inputDate2').val();
         var modeOfTransport = $('#inputTransport').val();
 
-        var selectedEndpointsArray = [];
+        var selectedEndpointsArray = endingPointsArray; // Usar los puntos finales seleccionados
 
-        $('#selected-endpoints').find('.endpoint').each(function () {
-            selectedEndpointsArray.push($(this).text());
-        });
+        console.log(selectedEndpointsArray);
 
         const totalDistance = calcularDistanciaTotal(startingPoint, selectedEndpointsArray);
+
+        console.log(totalDistance);
 
         var newRow = '<tr>' +
             '<th scope="row" class="id">' + id + '</th>' +
@@ -199,12 +199,11 @@ $(document).ready(function () {
             '<td class="startingDate">' + startingDate + '</td>' +
             '<td class="endingDate">' + endingDate + '</td>' +
             '<td class="modeOfTransport">' + modeOfTransport + '</td>' +
-            '<td>' + totalDistance + ' km</td>' +
+            '<td class="distance">' + totalDistance + ' km</td>' +
             '</tr>';
 
         $('tbody').append(newRow);
 
-        // Limpiar los campos del formulario
         $('#inputStartingPoint').val('');
         $('#planetSelect').val([]);
         $('#inputDate').val('');
@@ -220,19 +219,19 @@ $(document).ready(function () {
 
     function calcularDistanciaTotal(startingPoint, selectedEndpointsArray) {
         let totalDistance = 0;
-    
-        // Convertir los nombres de los planetas en selectedEndpointsArray a mayúscula
-        const selectedEndpointsUpperCase = selectedEndpointsArray.map(endpoint => endpoint.charAt(0).toUpperCase() + endpoint.slice(1));
-    
-        totalDistance += planetDistances[startingPoint][selectedEndpointsUpperCase[0]];
-    
-        for (let i = 0; i < selectedEndpointsUpperCase.length - 1; i++) {
-            totalDistance += planetDistances[selectedEndpointsUpperCase[i]][selectedEndpointsUpperCase[i + 1]];
+
+        for (let i = 0; i < selectedEndpointsArray.length; i++) {
+            const currentPlanet = selectedEndpointsArray[i];
+            const nextPlanet = selectedEndpointsArray[(i + 1) % selectedEndpointsArray.length]; // Obtén el siguiente planeta circularmente
+
+            if (i === 0) {
+                totalDistance += planetDistances[startingPoint][currentPlanet];
+            }
+
+            totalDistance += planetDistances[currentPlanet][nextPlanet];
         }
-    
-        // Sumar la distancia desde el último punto final al primer punto final
-        totalDistance += planetDistances[selectedEndpointsUpperCase[selectedEndpointsUpperCase.length - 1]][startingPoint];
-    
+
         return totalDistance.toFixed(2);
-    }    
+    }
+
 });

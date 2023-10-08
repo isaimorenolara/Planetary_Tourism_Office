@@ -36,5 +36,6 @@ $(window).load(function () {
     $(".set-size").click(function () { setView("scale-s set-size"); });
     $(".set-distance").click(function () { setView("scale-d set-distance"); });
 
+    //prueba
     init();
 });

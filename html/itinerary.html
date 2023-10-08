@@ -30,7 +30,7 @@
 
     </header>
     <main class="">
-        <section class=" ">
+        <section>
             <div class="container-fluid" style="padding: 0;">
                 <div class="row">
                     <div class="container-fluid">
@@ -44,8 +44,8 @@
                                     aria-label="Slide 3"></button>
                             </div>
                             <div class="carousel-inner">
-                                <div class="carousel-item active bg-dark">
-                                    <img src="../images/earth.png" class="rounded mx-auto d-block img-fluid" alt="..."
+                                <div class="carousel-item active bg-secondary">
+                                    <img src="../images/earth.png" class="rounded mx-auto d-block img-fluid mb-5" alt="..."
                                         style="height: 300px; object-fit: cover;">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>First slide label</h5>
@@ -53,7 +53,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item bg-dark">
-                                    <img src="../images/jupiter.png" class="rounded mx-auto d-block img-fluid" alt="..."
+                                    <img src="../images/jupiter.png" class="rounded mx-auto d-block img-fluid mb-5" alt="..."
                                         style="height: 300px; object-fit: cover;">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Second slide label</h5>
@@ -61,7 +61,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item bg-dark">
-                                    <img src="../images/mars.png" class="rounded mx-auto d-block img-fluid" alt="..."
+                                    <img src="../images/mars.png" class="rounded mx-auto d-block img-fluid mb-5" alt="..."
                                         style="height: 300px; object-fit: cover;">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Third slide label</h5>
@@ -84,94 +84,97 @@
                 </div>
             </div>
         </section>
-        <p class="d-inline-flex gap-1 px-4 py-4">
-            <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
-                aria-expanded="false" aria-controls="collapseExample">
-                <span style="border-right: 1px solid white; padding-right: 8px; margin-right: 8px;"><i
-                        class="fa-solid fa-plus"></i></span> Add
-            </button>
-        </p>
-        <div class="collapse mb-4" id="collapseExample">
-            <div class="card card-body">
-                <form action="">
-                    <div class="mb-3 row">
-                        <label for="inputName" class="col-sm-2 col-form-label">Starting point</label>
-                        <div class="col-sm-10">
-                            <select class="form-select" id="inputStartingPoint" aria-label="Default select example">
-                                <option value="" selected>Sun</option>
-                                <option value="Mercury">Mercury</option>
-                                <option value="Venus">Venus</option>
-                                <option value="Earth">Earth</option>
-                                <option value="Mars">Mars</option>
-                                <option value="Jupiter">Jupiter</option>
-                                <option value="Saturn">Saturn</option>
-                                <option value="Uranus">Uranus</option>
-                                <option value="Neptune">Neptune</option>
-                            </select>
+        <div class="container">
+            <p class="d-inline-flex gap-1 px-4 py-4">
+                <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    <span style="border-right: 1px solid white; padding-right: 8px; margin-right: 8px;"><i
+                            class="fa-solid fa-plus"></i></span> Add
+                </button>
+            </p>
+            <div class="collapse mb-4" id="collapseExample">
+                <div class="card card-body">
+                    <form action="">
+                        <div class="mb-3 row">
+                            <label for="inputName" class="col-sm-2 col-form-label">Starting point</label>
+                            <div class="col-sm-10">
+                                <select class="form-select" id="inputStartingPoint" aria-label="Default select example">
+                                    <option value="" selected>Sun</option>
+                                    <option value="Mercury">Mercury</option>
+                                    <option value="Venus">Venus</option>
+                                    <option value="Earth">Earth</option>
+                                    <option value="Mars">Mars</option>
+                                    <option value="Jupiter">Jupiter</option>
+                                    <option value="Saturn">Saturn</option>
+                                    <option value="Uranus">Uranus</option>
+                                    <option value="Neptune">Neptune</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="mb-3 row">
-                        <label for="inputType" class="col-sm-2 col-form-label">Ending point(s)</label>
-                        <div class="col-sm-10">
-                            <select id="planetSelect" class="form-select" aria-label="Default select example" multiple>
-                                <option value="Sun">Sun</option>
-                                <option value="Mercury">Mercury</option>
-                                <option value="Venus">Venus</option>
-                                <option value="Earth">Earth</option>
-                                <option value="Mars">Mars</option>
-                                <option value="Jupiter">Jupiter</option>
-                                <option value="Saturn">Saturn</option>
-                                <option value="Uranus">Uranus</option>
-                                <option value="Neptune">Neptune</option>
-                            </select>
+                        <div class="mb-3 row">
+                            <label for="inputType" class="col-sm-2 col-form-label">Ending point(s)</label>
+                            <div class="col-sm-10">
+                                <select id="planetSelect" class="form-select" aria-label="Default select example"
+                                    multiple>
+                                    <option value="Sun">Sun</option>
+                                    <option value="Mercury">Mercury</option>
+                                    <option value="Venus">Venus</option>
+                                    <option value="Earth">Earth</option>
+                                    <option value="Mars">Mars</option>
+                                    <option value="Jupiter">Jupiter</option>
+                                    <option value="Saturn">Saturn</option>
+                                    <option value="Uranus">Uranus</option>
+                                    <option value="Neptune">Neptune</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="mb-3 row">
-                        <label for="inputDate" class="col-sm-2 col-form-label">Starting date</label>
-                        <div class="col-sm-10">
-                            <input type="date" class="form-control" id="inputDate">
+                        <div class="mb-3 row">
+                            <label for="inputDate" class="col-sm-2 col-form-label">Starting date</label>
+                            <div class="col-sm-10">
+                                <input type="date" class="form-control" id="inputDate">
+                            </div>
                         </div>
-                    </div>
-                    <div class="mb-3 row">
-                        <label for="inputDate2" class="col-sm-2 col-form-label">Ending date</label>
-                        <div class="col-sm-10">
-                            <input type="date" class="form-control" id="inputDate2">
+                        <div class="mb-3 row">
+                            <label for="inputDate2" class="col-sm-2 col-form-label">Ending date</label>
+                            <div class="col-sm-10">
+                                <input type="date" class="form-control" id="inputDate2">
+                            </div>
                         </div>
-                    </div>
-                    <div class="mb-3 row">
-                        <label for="inputType" class="col-sm-2 col-form-label">Mode of transport</label>
-                        <div class="col-sm-10">
-                            <select id="inputTransport" class="form-select" aria-label="Default select example">
-                                <option value="Rockets" selected>Rockets</option>
-                                <option value="Spaceships">Spaceships</option>
-                                <option value="Stargates">Stargates</option>
-                                <option value="Interstellar">Interstellar Ships</option>
-                                <option value="Wormholes">Wormholes</option>
-                            </select>
+                        <div class="mb-3 row">
+                            <label for="inputType" class="col-sm-2 col-form-label">Mode of transport</label>
+                            <div class="col-sm-10">
+                                <select id="inputTransport" class="form-select" aria-label="Default select example">
+                                    <option value="Rockets" selected>Rockets</option>
+                                    <option value="Spaceships">Spaceships</option>
+                                    <option value="Stargates">Stargates</option>
+                                    <option value="Interstellar">Interstellar Ships</option>
+                                    <option value="Wormholes">Wormholes</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="d-flex flex-row-reverse">
-                        <button class="btn btn-dark" type="button" id="agregar">Add</button>
-                    </div>
-                </form>
+                        <div class="d-flex flex-row-reverse">
+                            <button class="btn btn-dark" type="button" id="agregar">Add</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
-        <table class="table table-light table-striped">
-            <thead>
-                <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Starting point</th>
-                    <th scope="col">Ending point(s)</th>
-                    <th scope="col">Starting date</th>
-                    <th scope="col">Ending date</th>
-                    <th scope="col">Mode of transport</th>
-                    <!-- <th scope="col">Editor</th> -->
-                </tr>
-            </thead>
-            <tbody>
+            <table class="table table-light table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Starting point</th>
+                        <th scope="col">Ending point(s)</th>
+                        <th scope="col">Starting date</th>
+                        <th scope="col">Ending date</th>
+                        <th scope="col">Mode of transport</th>
+                        <!-- <th scope="col">Editor</th> -->
+                    </tr>
+                </thead>
+                <tbody>
 
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </div>
     </main>
     <footer>
         <!-- place footer here -->

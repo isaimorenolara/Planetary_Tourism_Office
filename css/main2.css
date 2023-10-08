@@ -1,5 +1,23 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
 
+body{
+    font-family: "Public Sans Web",sans-serif;
+}
+
+.navbar-brand.titulo {
+    float: left; 
+}
+
+.navbar-brand .nasa {
+    float: right;
+    margin-left: 10px;
+}
+
+.nasa{
+    height: 10%;
+    width: 10%;
+}
+
 .hola {
     height: 450px;
     object-fit: cover;

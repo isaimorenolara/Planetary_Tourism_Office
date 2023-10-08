@@ -3,34 +3,8 @@ $(document).ready(function () {
 
     $.getJSON('../json/planets.json', function (data) {
         console.log(data);
-
-        var carousel = $('#carouselExampleIndicators2');
-
-        var carouselInner = carousel.find('.carousel-inner');
-
-        for (var i = 0; i < data.length; i++) {
-            var planet = data[i];
-
-            var card = $('<div class="col-md-4 mb-3">');
-            var cardContent = $('<div class="card">');
-            var cardImage = $('<img class="img-fluid" alt="100%x280">').attr('src', planet.image);
-            var cardBody = $('<div class="card-body">');
-            var cardTitle = $('<h4 class="card-title">').text(planet.name);
-            var cardText = $('<p class="card-text">').text(planet.description);
-
-            cardBody.append(cardTitle, cardText);
-            cardContent.append(cardImage, cardBody);
-            card.append(cardContent);
-
-            if (i === 0) {
-                card.addClass('active');
-            }
-            carouselInner.append(card);
-        }
-
-        carousel.carousel();
+        
     });
-
 
     $('#agregar').on('click', function () {
         var startingPoint = $('#inputStartingPoint').val();

@@ -5,7 +5,13 @@
         "image": "http://space-facts.com/wp-content/uploads/mercury-transparent.png",
         "velocity": "47",
         "distance": "58",
-        "description": "Mercury is the closest planet to the Sun and due to its proximity it is not easily seen except during twilight. For every two orbits of the Sun, Mercury completes three rotations about its axis and up until 1965 it was thought that the same side of Mercury constantly faced the Sun. Thirteen times a century Mercury can be observed from the Earth passing across the face of the Sun in an event called a transit, the next will occur on the 9th May 2016."
+        "description": "Mercury is the closest planet to the Sun and due to its proximity it is not easily seen except during twilight. For every two orbits of the Sun, Mercury completes three rotations about its axis and up until 1965 it was thought that the same side of Mercury constantly faced the Sun. Thirteen times a century Mercury can be observed from the Earth passing across the face of the Sun in an event called a transit, the next will occur on the 9th May 2016.",
+        "tourist_spots": [
+            {
+                "name": "Caloris Basin",
+                "description": "Caloris Basin is one of the largest impact basins in the solar system, located on the surface of Mercury. It's known for its impressive ring of mountains and extensive lava plains."
+            }
+        ]
     },
     {
         "position": "2",
@@ -13,7 +19,13 @@
         "image": "http://space-facts.com/wp-content/uploads/venus-transparent.png",
         "velocity": "35",
         "distance": "108",
-        "description": "Venus is the second planet from the Sun and is the second brightest object in the night sky after the Moon. Named after the Roman goddess of love and beauty, Venus is the second largest terrestrial planet and is sometimes referred to as the Earth’s sister planet due the their similar size and mass. The surface of the planet is obscured by an opaque layer of clouds made up of sulphuric acid."
+        "description": "Venus is the second planet from the Sun and is the second brightest object in the night sky after the Moon. Named after the Roman goddess of love and beauty, Venus is the second largest terrestrial planet and is sometimes referred to as the Earth’s sister planet due to their similar size and mass. The surface of the planet is obscured by an opaque layer of clouds made up of sulphuric acid.",
+        "tourist_spots": [
+            {
+                "name": "Aphrodite Terra",
+                "description": "Aphrodite Terra is a highland region on Venus known for its rugged and diverse terrain. It's named after the goddess of love and beauty."
+            }
+        ]
     },
     {
         "position": "3",
@@ -21,7 +33,17 @@
         "image": "http://space-facts.com/wp-content/uploads/earth-transparent.png",
         "velocity": "29",
         "distance": "149",
-        "description": "Earth is the third planet from the Sun and is the largest of the terrestrial planets. The Earth is the only planet in our solar system not to be named after a Greek or Roman deity. The Earth was formed approximately 4.54 billion years ago and is the only known planet to support life."
+        "description": "Earth is the third planet from the Sun and is the largest of the terrestrial planets. The Earth is the only planet in our solar system not to be named after a Greek or Roman deity. The Earth was formed approximately 4.54 billion years ago and is the only known planet to support life.",
+        "tourist_spots": [
+            {
+                "name": "Grand Canyon",
+                "description": "The Grand Canyon is a massive canyon located in Arizona, USA, known for its breathtaking views and unique geology."
+            },
+            {
+                "name": "Great Barrier Reef",
+                "description": "The Great Barrier Reef is the world's largest coral reef system, located off the coast of Queensland, Australia. It's a paradise for divers and marine enthusiasts."
+            }
+        ]
     },
     {
         "position": "4",
@@ -29,7 +51,17 @@
         "image": "http://space-facts.com/wp-content/uploads/mars-transparent.png",
         "velocity": "24",
         "distance": "227",
-        "description": "Mars is the fourth planet from the Sun and is the second smallest planet in the solar system. Named after the Roman god of war, Mars is also often described as the “Red Planet” due to its reddish appearance. Mars is a terrestrial planet with a thin atmosphere composed primarily of carbon dioxide."
+        "description": "Mars is the fourth planet from the Sun and is the second smallest planet in the solar system. Named after the Roman god of war, Mars is also often described as the “Red Planet” due to its reddish appearance. Mars is a terrestrial planet with a thin atmosphere composed primarily of carbon dioxide.",
+        "tourist_spots": [
+            {
+                "name": "Fobos and Deimos",
+                "description": "Mars has two small moons, Phobos and Deimos, both irregularly shaped and relatively small compared to Earth's Moon. Phobos orbits Mars very closely, while Deimos is farther away."
+            },
+            {
+                "name": "Casquetes Polares",
+                "description": "Mars has polar ice caps at its north and south poles, primarily composed of water and carbon dioxide. These ice caps expand and contract with changing seasons on Mars."
+            }
+        ]
     },
     {
         "position": "5",
@@ -37,7 +69,17 @@
         "image": "http://space-facts.com/wp-content/uploads/jupiter-transparent.png",
         "velocity": "13",
         "distance": "778",
-        "description": "The planet Jupiter is the fifth planet out from the Sun, and is two and a half times more massive than all the other planets in the solar system combined. It is made primarily of gases and is therefore known as a “gas giant”."
+        "description": "The planet Jupiter is the fifth planet out from the Sun, and is two and a half times more massive than all the other planets in the solar system combined. It is made primarily of gases and is therefore known as a “gas giant”.",
+        "tourist_spots": [
+            {
+                "name": "Great Red Spot",
+                "description": "The Great Red Spot is a massive storm on Jupiter, known for its distinctive reddish color and turbulent nature."
+            },
+            {
+                "name": "Jupiter's Rings",
+                "description": "Jupiter has a system of faint rings composed of dust and small particles. They are not as prominent as Saturn's rings but are still a fascinating sight."
+            }
+        ]
     },
     {
         "position": "6",
@@ -45,7 +87,17 @@
         "image": "http://space-facts.com/wp-content/uploads/saturn-transparent.png",
         "velocity": "9",
         "distance": "1426",
-        "description": "Saturn is the sixth planet from the Sun and the most distant that can be seen with the naked eye. Saturn is the second largest planet and is best known for its fabulous ring system that was first observed in 1610 by the astronomer Galileo Galilei. Like Jupiter, Saturn is a gas giant and is composed of similar gasses including hydrogen, helium and methane."
+        "description": "Saturn is the sixth planet from the Sun and the most distant that can be seen with the naked eye. Saturn is the second largest planet and is best known for its fabulous ring system that was first observed in 1610 by the astronomer Galileo Galilei. Like Jupiter, Saturn is a gas giant and is composed of similar gases including hydrogen, helium, and methane.",
+        "tourist_spots": [
+            {
+                "name": "Saturn's Rings",
+                "description": "Saturn is famous for its stunning ring system, which consists of multiple rings made primarily of ice particles and dust. They are visible even with small telescopes from Earth."
+            },
+            {
+                "name": "Cassini-Huygens Mission",
+                "description": "The Cassini-Huygens mission, a collaboration between NASA and ESA, explored Saturn and its moons for nearly 20 years. The Huygens probe even landed on Saturn's moon Titan, providing valuable data."
+            }
+        ]
     },
     {
         "position": "7",
@@ -53,7 +105,17 @@
         "image": "http://space-facts.com/wp-content/uploads/uranus-transparent.png",
         "velocity": "6",
         "distance": "2870",
-        "description": "Uranus is the seventh planet from the Sun. While being visible to the naked eye, it was not recognised as a planet due to its dimness and slow orbit. Uranus became the first planet discovered with the use of a telescope. Uranus is tipped over on its side with an axial tilt of 98 degrees. It is often described as “rolling around the Sun on its side.”"
+        "description": "Uranus is the seventh planet from the Sun. While being visible to the naked eye, it was not recognised as a planet due to its dimness and slow orbit. Uranus became the first planet discovered with the use of a telescope. Uranus is tipped over on its side with an axial tilt of 98 degrees. It is often described as “rolling around the Sun on its side.”",
+        "tourist_spots": [
+            {
+                "name": "Rings of Uranus",
+                "description": "Uranus also has a system of rings, although they are not as prominent as those of Saturn. The rings of Uranus are composed of ice particles and were discovered thanks to space missions."
+            },
+            {
+                "name": "Moons of Uranus",
+                "description": "Uranus has several moons, including Miranda, Ariel, Umbriel, Titania, and Oberon. Miranda, in particular, stands out for its diverse and unusual surface features."
+            }
+        ]
     },
     {
         "position": "8",
@@ -61,7 +123,17 @@
         "image": "http://space-facts.com/wp-content/uploads/neptune-transparent.png",
         "velocity": "5",
         "distance": "4498",
-        "description": "Neptune is the eighth planet from the Sun making it the most distant in the solar system. This gas giant planet may have formed much closer to the Sun in early solar system history before migrating to its present position."
+        "description": "Neptune is the eighth planet from the Sun, making it the most distant in the solar system. This gas giant planet may have formed much closer to the Sun in early solar system history before migrating to its present position.",
+        "tourist_spots": [
+            {
+                "name": "Great Dark Spot",
+                "description": "Neptune's Great Dark Spot is a massive storm in the planet's atmosphere, similar to Jupiter's Great Red Spot. It's a dynamic feature that changes in size and intensity."
+            },
+            {
+                "name": "Moon Triton",
+                "description": "Triton is the largest moon of Neptune and is known for its unique features, including geysers erupting nitrogen gas from beneath its icy surface."
+            }
+        ]
     },
     {
         "position": "9",
@@ -69,6 +141,16 @@
         "image": "http://pngimg.com/uploads/sun/sun_PNG13424.png",
         "velocity": "220",
         "distance": "0",
-        "description": "The Sun (or Sol), is the star at the centre of our solar system and is responsible for the Earth’s climate and weather. The Sun is an almost perfect sphere with a difference of just 10km in diameter between the poles and the equator. The average radius of the Sun is 695,508 km (109.2 x that of the Earth) of which 20–25% is the core."
+        "description": "The Sun (or Sol), is the star at the centre of our solar system and is responsible for the Earth’s climate and weather. The Sun is an almost perfect sphere with a difference of just 10km in diameter between the poles and the equator. The average radius of the Sun is 695,508 km (109.2 x that of the Earth) of which 20–25% is the core.",
+        "tourist_spots": [
+            {
+                "name": "Solar Core",
+                "description": "The solar core is the central region of the Sun where nuclear fusion reactions take place, producing massive amounts of energy in the form of light and heat."
+            },
+            {
+                "name": "Sunspots",
+                "description": "Sunspots are dark areas on the Sun's surface caused by intense magnetic activity. They are visible through telescopes and are associated with variations in solar activity."
+            }
+        ]
     }
 ]

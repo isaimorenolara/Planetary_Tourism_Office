@@ -59,9 +59,6 @@ function loadPlanet(planetId) {
         renderer.render(scene, camera);
     };
 
-    
-    
-
     animate();
 }
 

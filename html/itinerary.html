@@ -1,0 +1,171 @@
+<!-- Moreno Lara Isai Vicente - Tarea 2 -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>AstroAdventures</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../css/main2.css">
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Astro Adventures</a>
+                <a class="navbar-brand" href="#"><i class="fa-solid fa-globe"></i></a>
+            </div>
+        </nav>
+
+    </header>
+    <main class="">
+        <section>
+            <div class="container-fluid" style="padding: 0;">
+                <div class="row">
+                    <div class="container-fluid">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <!-- Los indicadores se mostrarán aquí de forma dinámica -->
+                            </div>
+                            <div id="planetCarousel" class="carousel-inner universe">
+                                <!-- Los planetas se mostrarán aquí de forma dinámica -->
+                            </div>                            
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <p class="d-inline-flex gap-1 px-4 py-4">
+                <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    <span style="border-right: 1px solid white; padding-right: 8px; margin-right: 8px;"><i
+                            class="fa-solid fa-plus"></i></span> Add
+                </button>
+            </p>
+            <div class="collapse mb-4" id="collapseExample">
+                <div class="card card-body">
+                    <form action="">
+                        <div class="mb-3 row">
+                            <label for="inputName" class="col-sm-2 col-form-label">Starting point</label>
+                            <div class="col-sm-10">
+                                <select class="form-select" id="inputStartingPoint" aria-label="Default select example">
+                                    <option value="" selected>Sun</option>
+                                    <option value="Mercury">Mercury</option>
+                                    <option value="Venus">Venus</option>
+                                    <option value="Earth">Earth</option>
+                                    <option value="Mars">Mars</option>
+                                    <option value="Jupiter">Jupiter</option>
+                                    <option value="Saturn">Saturn</option>
+                                    <option value="Uranus">Uranus</option>
+                                    <option value="Neptune">Neptune</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="inputType" class="col-sm-2 col-form-label">Ending point(s)</label>
+                            <div class="col-sm-10">
+                                <select id="planetSelect" class="form-select" aria-label="Default select example"
+                                    multiple>
+                                    <option value="Sun">Sun</option>
+                                    <option value="Mercury">Mercury</option>
+                                    <option value="Venus">Venus</option>
+                                    <option value="Earth">Earth</option>
+                                    <option value="Mars">Mars</option>
+                                    <option value="Jupiter">Jupiter</option>
+                                    <option value="Saturn">Saturn</option>
+                                    <option value="Uranus">Uranus</option>
+                                    <option value="Neptune">Neptune</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="inputDate" class="col-sm-2 col-form-label">Starting date</label>
+                            <div class="col-sm-10">
+                                <input type="date" class="form-control" id="inputDate">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="inputDate2" class="col-sm-2 col-form-label">Ending date</label>
+                            <div class="col-sm-10">
+                                <input type="date" class="form-control" id="inputDate2">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="inputType" class="col-sm-2 col-form-label">Mode of transport</label>
+                            <div class="col-sm-10">
+                                <select id="inputTransport" class="form-select" aria-label="Default select example">
+                                    <option value="Rockets" selected>Rockets</option>
+                                    <option value="Spaceships">Spaceships</option>
+                                    <option value="Stargates">Stargates</option>
+                                    <option value="Interstellar">Interstellar Ships</option>
+                                    <option value="Wormholes">Wormholes</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row-reverse">
+                            <button class="btn btn-dark" type="button" id="agregar">Add</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <table class="table table-light table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Starting point</th>
+                        <th scope="col">Ending point(s)</th>
+                        <th scope="col">Starting date</th>
+                        <th scope="col">Ending date</th>
+                        <th scope="col">Mode of transport</th>
+                        <!-- <th scope="col">Editor</th> -->
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="../js/script2.js"></script>
+    <script src="../js/script3.js"></script>
+</body>
+
+</html>

@@ -27,33 +27,54 @@
         </nav>
 
     </header>
-    <main class="px-5 py-5">
-        <section class="">
-            <div class="container">
+    <main class="">
+        <section class=" ">
+            <div class="container-fluid" style="padding: 0;">
                 <div class="row">
-                    <div class="col-8">
-                        <h3 class="mb-3">Planets</h3>
-                    </div>
-                    <div class="col-4 text-right">
-                        <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                            <i class="fa fa-arrow-left"></i>
-                        </a>
-                        <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
-                            <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </div>
-                    <div class="col-12">
-                        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-        
-                            <div class="carousel-inner">
-                                
+                    <div class="container-fluid">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          </div>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active bg-dark">
+                              <img src="../images/earth.png" class="rounded mx-auto d-block img-fluid" alt="..." style="height: 300px; object-fit: cover;">
+                              <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                              </div>
                             </div>
+                            <div class="carousel-item bg-dark">
+                              <img src="../images/jupiter.png" class="rounded mx-auto d-block img-fluid" alt="..." style="height: 300px; object-fit: cover;">
+                              <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                              </div>
+                            </div>
+                            <div class="carousel-item bg-dark">
+                              <img src="../images/mars.png" class="rounded mx-auto d-block img-fluid" alt="..." style="height: 300px; object-fit: cover;">
+                              <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
                         </div>
-                    </div>
+                      </div>
                 </div>
             </div>
         </section>
-        <p class="d-inline-flex gap-1">
+        <p class="d-inline-flex gap-1 px-4 py-4">
             <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
                 aria-expanded="false" aria-controls="collapseExample">
                 <span style="border-right: 1px solid white; padding-right: 8px; margin-right: 8px;"><i
@@ -75,7 +96,7 @@
                                 <option value="Jupiter">Jupiter</option>
                                 <option value="Saturn">Saturn</option>
                                 <option value="Uranus">Uranus</option>
-                                <option value="Neptune<">Neptune</option>
+                                <option value="Neptune">Neptune</option>
                             </select>
                         </div>
                     </div>

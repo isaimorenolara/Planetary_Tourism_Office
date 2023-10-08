@@ -12,7 +12,7 @@
 <body>
     <button onclick="loadTexture('texturaMercurio.jpg',1)">Mercurio</button>
     <button onclick="loadTexture('texturaVenus.jpg',2)">Venus</button>
-    <button onclick="loadTexture('texturaTierra.png',3)">Tierra</button>
+    <button onclick="loadTexture('texturaTierra.jpg',3)">Tierra</button>
     <button onclick="loadTexture('texturaMarte.jpg',4)">Marte</button>
     <button onclick="loadTexture('texturaJupiter.jpg',5)">Jupiter</button>
     <button onclick="loadTexture('texturaSaturno.jpg',6)">Saturno</button>
@@ -23,8 +23,10 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
             <div class="planet"></div>
+            <div class="tourist-spots"></div> <!-- Aquí se mostrarán los lugares turísticos -->
         </div>
     </div>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
     <script src="/js/script3.js"></script>

@@ -230,6 +230,19 @@ body {
   transform-style: preserve-3d;
 }
 
+.planet-viewMax {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transform-style: preserve-3d;
+  z-index: 2;
+  
+}
+
 #sun {
   font-weight: bold;
   background-color: #fb7209;
@@ -1536,7 +1549,7 @@ h1 {
 
 .start{
   color: #FFFFFF;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .start:hover{
@@ -1602,6 +1615,7 @@ h1 span,
   display: block;
   position: relative;
   text-decoration: none;
+  z-index: 3;
 }
 
 #navbar a:hover,
@@ -2012,3 +2026,17 @@ body {
 }
 
 /*-------------------------------------------------*/
+
+
+.tourist-spots{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  z-index: 2;
+  padding-left: 2%;
+  padding-top: 2%;
+}
+
+.modal{
+  margin-top:-10px;
+}

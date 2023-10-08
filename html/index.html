@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="en">
 
 <head>
@@ -22,16 +23,27 @@
   <div id="data">
 
     <a class="sun" title="sun" href="#sunspeed">Sun</a>
-    <a class="mercury" title="mercury" href="#mercuryspeed">Mercury</a>
-    <a class="venus" title="venus" href="#venusspeed">Venus</a>
-    <a class="earth active" title="earth" href="#earthspeed">Earth</a>
-    <a class="mars" title="mars" href="#marsspeed">Mars</a>
-    <a class="jupiter" title="jupiter" href="#jupiterspeed">Jupiter</a>
-    <a class="saturn" title="saturn" href="#saturnspeed">Saturn</a>
-    <a class="uranus" title="uranus" href="#uranusspeed">Uranus</a>
-    <a class="neptune" title="neptune" href="#neptunespeed">Neptune</a>
+    <a class="mercury" title="mercury" href="#mercuryspeed" onclick="loadTexture('texturaMercurio.jpg',1)">Mercury</a>
+    <a class="venus" title="venus" href="#venusspeed" onclick="loadTexture('texturaVenus.jpg',2)">Venus</a>
+    <a class="earth active" title="earth" href="#earthspeed" onclick="loadTexture('texturaTierra.jpg',3)">Earth</a>
+    <a class="mars" title="mars" href="#marsspeed" onclick="loadTexture('texturaMarte.jpg',4)">Mars</a>
+    <a class="jupiter" title="jupiter" href="#jupiterspeed" onclick="loadTexture('texturaJupiter.jpg',5)">Jupiter</a>
+    <a class="saturn" title="saturn" href="#saturnspeed" onclick="loadTexture('texturaSaturno.jpg',6)">Saturn</a>
+    <a class="uranus" title="uranus" href="#uranusspeed" onclick="loadTexture('texturaUrano.jpg',7)">Uranus</a>
+    <a class="neptune" title="neptune" href="#neptunespeed" onclick="loadTexture('texturaNeptuno.jpg',8)">Neptune</a>
     <h2 class="start" title="start" onclick="window.location.href='../html/itinerary.html';">Get started here</h2>
   </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="planet-viewMax"></div>
+        <div class="tourist-spots" ></div> <!-- Aquí se mostrarán los lugares turísticos -->
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+<script src="/js/script3.js"></script>
 
   <div id="universe" class="scale-stretched">
     <div id="galaxy">

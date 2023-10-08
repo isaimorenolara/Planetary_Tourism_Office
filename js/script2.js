@@ -199,7 +199,7 @@ $(document).ready(function () {
             '<td class="startingDate">' + startingDate + '</td>' +
             '<td class="endingDate">' + endingDate + '</td>' +
             '<td class="modeOfTransport">' + modeOfTransport + '</td>' +
-            '<td class="distance">' + totalDistance + ' Mkm</td>' +
+            '<td class="distance">' + totalDistance + ' km</td>' +
             '</tr>';
 
         $('tbody').append(newRow);

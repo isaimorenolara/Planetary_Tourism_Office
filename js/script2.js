@@ -40,10 +40,43 @@ $(document).ready(function () {
         $('#carouselExampleCaptions').carousel();
     });
 
+    var endingPointsArray = [];
+
+    function resetEndpointButtons() {
+        // Agrega la clase "btn-outline-dark" y quita la clase "btn-dark"
+        $('.btn-add-endpoint').addClass('btn-outline-dark').removeClass('btn-dark');
+    }
+
+    $(document).on('click', '.btn-add-endpoint', function() {
+        var endpoint = $(this).data('value');
+
+        // Verificar si el endpoint ya está en el array
+        var index = endingPointsArray.indexOf(endpoint);
+        
+        if (index === -1) {
+            endingPointsArray.push(endpoint);
+            $(this).addClass('btn-dark');
+            $(this).removeClass('btn-outline-dark');
+        } else {
+            endingPointsArray.splice(index, 1);
+            $(this).removeClass('btn-dark');
+            $(this).addClass('btn-outline-dark');
+        }
+
+        displaySelectedEndpoints();
+    });
+
+    function displaySelectedEndpoints() {
+        $('#selected-endpoints').empty();
+        endingPointsArray.forEach(function (endpoint) {
+            $('#selected-endpoints').append('<span class="badge bg-success me-2">' + endpoint + '</span>');
+        });
+    }
 
     $('#agregar').on('click', function () {
+        resetEndpointButtons();
+
         var startingPoint = $('#inputStartingPoint').val();
-        var endingPoints = $('#planetSelect').val();
         var startingDate = $('#inputDate').val();
         var endingDate = $('#inputDate2').val();
         var modeOfTransport = $('#inputTransport').val();
@@ -52,7 +85,7 @@ $(document).ready(function () {
         var newRow = '<tr>' +
             '<th scope="row" class="id">' + id + '</th>' +
             '<td class="startingPoint">' + startingPoint + '</td>' +
-            '<td class="endingPoints">' + endingPoints.join(', ') + '</td>' +
+            '<td class="endingPoints">' + endingPointsArray.join(', ') + '</td>' +
             '<td class="startingDate">' + startingDate + '</td>' +
             '<td class="endingDate">' + endingDate + '</td>' +
             '<td class="modeOfTransport">' + modeOfTransport + '</td>' +
@@ -66,14 +99,10 @@ $(document).ready(function () {
         $('#inputDate').val('');
         $('#inputDate2').val('');
         $('#inputTransport').val('');
+        
+        endingPointsArray = [];
+        displaySelectedEndpoints();
         id++;
     });
 
-    function reasignarIDs() {
-        var rows = $('tbody tr');
-        rows.each(function (index) {
-            $(this).find('.id').text(index);
-        });
-        id = rows.length;
-    }
 });

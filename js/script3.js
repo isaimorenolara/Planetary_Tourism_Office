@@ -41,16 +41,16 @@ function loadPlanet(planetId) {
             const touristSpots = selectedPlanet.tourist_spots;
             if (touristSpots && touristSpots.length > 0) {
                 const touristSpotsHtml = touristSpots.map(spot => `<p>${spot.name}</p>`).join('');
-                document.querySelector('.tourist-spots').innerHTML = `<h3>Lugares turísticos:</h3>${touristSpotsHtml}`;
+                document.querySelector('.tourist-spots').innerHTML = `<h3>Tourist spots:</h3>${touristSpotsHtml}`;
             } else {
-                document.querySelector('.tourist-spots').innerHTML = '<p>No hay lugares turísticos para este planeta.</p>';
+                document.querySelector('.tourist-spots').innerHTML = '<p>There aren´t tourist spots .</p>';
             }
         } else {
-            document.querySelector('.tourist-spots').innerHTML = '<p>Planeta no encontrado en los datos.</p>';
+            document.querySelector('.tourist-spots').innerHTML = '<p>Planet not found.</p>';
         }
     })
     .fail(function(error) {
-        document.querySelector('.tourist-spots').innerHTML = `<p>Error al cargar el archivo JSON: ${error}</p>`;
+        document.querySelector('.tourist-spots').innerHTML = `<p>Error to load JSON file: ${error}</p>`;
     });
 
     const animate = () => {
